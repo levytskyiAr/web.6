@@ -6,12 +6,11 @@ CREATE TABLE groups (
 );
 
 -- Таблиця студентів
-drop table if exists students;
 CREATE TABLE students (
   id SERIAL PRIMARY KEY,
   fullname VARCHAR(150) NOT NULL,
   group_id INTEGER REFERENCES groups(id)
-  	on delete cascade
+    ON DELETE CASCADE
 );
 
 -- Таблиця викладачів
