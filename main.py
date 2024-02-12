@@ -45,3 +45,6 @@ finally:
     # Закриття підключення
     cur.close()
     conn.close()
+
+
+
